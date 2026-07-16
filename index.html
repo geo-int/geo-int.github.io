@@ -290,6 +290,35 @@
     }
     .people-grid.sm .person-aff { font-size: .74rem; }
 
+    /* ── Affiliation logos ───────────────────────────────────── */
+    .logo-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2.25rem 3rem;
+    }
+    .logo-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      opacity: .85;
+      transition: transform .18s ease, opacity .18s ease;
+    }
+    .logo-item:hover {
+      transform: translateY(-2px);
+      opacity: 1;
+    }
+    .logo-item img {
+      max-height: 100%;
+      max-width: 170px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
     /* ── Schedule ─────────────────────────────────────────────── */
     .sched-wrap {
       overflow: hidden;
@@ -793,7 +822,7 @@
           </a>
         </div>
         <div class="person-name">Maolin Gao</div>
-        <div class="person-aff">TU Munich</div>
+        <div class="person-aff">TU Munich &amp; MCML</div>
       </div>
 
       <div class="person">
@@ -853,7 +882,7 @@
           </a>
         </div>
         <div class="person-name">Riccardo Marin</div>
-        <div class="person-aff">TU Munich</div>
+        <div class="person-aff">TU Munich &amp; MCML</div>
       </div>
 
       <div class="person">
@@ -928,9 +957,41 @@
           </a>
         </div>
         <div class="person-name">Daniel Cremers</div>
-        <div class="person-aff">TU Munich</div>
+        <div class="person-aff">TU Munich &amp; MCML</div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ── Affiliations ──────────────────────────────────────────────── -->
+<section class="sec sec-alt" id="affiliations">
+  <div class="sec-inner">
+    <div class="logo-strip fi">
+      <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener" class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Imperial_logo.svg" alt="Imperial College London" onerror="this.style.display='none';">
+      </a>
+      <a href="https://www.tum.de/" target="_blank" rel="noopener" class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Logo_of_the_Technical_University_of_Munich.svg" alt="TU Munich" onerror="this.style.display='none';">
+      </a>
+      <a href="https://mcml.ai/" target="_blank" rel="noopener" class="logo-item">
+        <img src="resources/logos/mcml.png" alt="Munich Center for Machine Learning (MCML)" onerror="this.style.display='none';">
+      </a>
+      <a href="https://www.sfu.ca/" target="_blank" rel="noopener" class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/SFU-block-logo.svg" alt="Simon Fraser University" onerror="this.style.display='none';">
+      </a>
+      <a href="https://www.mit.edu/" target="_blank" rel="noopener" class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/MIT_logo_2003-2023.svg" alt="MIT" onerror="this.style.display='none';">
+      </a>
+      <a href="https://www.utoronto.ca/" target="_blank" rel="noopener" class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/UofT_Wordmark.png" alt="University of Toronto" onerror="this.style.display='none';">
+      </a>
+      <a href="https://www.stanford.edu/" target="_blank" rel="noopener" class="logo-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Stanford_wordmark_%282012%29.svg" alt="Stanford University" onerror="this.style.display='none';">
+      </a>
+      <a href="https://deepmind.google/" target="_blank" rel="noopener" class="logo-item">
+        <img src="resources/logos/google-deepmind.png" alt="Google DeepMind" onerror="this.style.display='none';">
+      </a>
     </div>
   </div>
 </section>

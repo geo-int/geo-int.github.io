@@ -321,14 +321,18 @@
 
     /* ── Schedule ─────────────────────────────────────────────── */
     .sched-wrap {
-      overflow: hidden;
+      width: max-content;
+      min-width: min(880px, 100%);
+      max-width: 100%;
+      margin: 0 auto;
+      overflow-x: auto;
       border: 1px solid var(--border);
       border-radius: 12px;
     }
     table.sched {
       width: 100%;
       border-collapse: collapse;
-      table-layout: fixed;
+      table-layout: auto;
     }
     table.sched thead th {
       background: #e2dcc8;
@@ -340,7 +344,7 @@
       text-transform: uppercase;
       letter-spacing: .07em;
     }
-    table.sched thead th:first-child { width: 150px; }
+    table.sched thead th:first-child { white-space: nowrap; }
     table.sched td:last-child { padding-left: 1.75rem; }
     table.sched tbody tr { border-bottom: 1px solid var(--border); }
     table.sched tbody tr:last-child { border-bottom: none; }
@@ -489,7 +493,7 @@
     <a href="#home" class="nav-logo">GeoInt <em>ECCV 2026 Workshop</em></a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#speakers">Speakers</a></li>
-      <!-- <li><a href="#schedule">Schedule</a></li> -->
+      <li><a href="#schedule">Schedule</a></li>
       <li><a href="#cfp">Call for Papers</a></li>
       <li><a href="#organizers">Organizers</a></li>
       <li><a href="#contact-us" class="cta">Contact</a></li>
@@ -654,7 +658,7 @@
   </div>
 </section>
 
-<!-- ── Schedule (commented out) ─────────────────────────────────────
+<!-- ── Schedule ─────────────────────────────────────────────────── -->
 <section class="sec" id="schedule">
   <div class="sec-inner">
     <div class="sec-hd fi">
@@ -666,66 +670,61 @@
         <tbody>
           <tr class="row-open">
             <td class="t-time">09:00 – 09:15</td>
-            <td class="t-evt"><strong>Opening Remarks &amp; Workshop Overview</strong></td>
+            <td class="t-evt"><strong>Opening Remarks and Workshop Overview</strong></td>
           </tr>
           <tr class="row-talk">
-            <td class="t-time">09:15 – 09:55</td>
-            <td class="t-evt"><strong>Keynote Talk 1: Qixing Huang</strong></td>
-          </tr>
-          <tr class="row-talk">
-            <td class="t-time">09:55 – 10:35</td>
-            <td class="t-evt"><strong>Keynote Talk 2: Zorah Lähner</strong></td>
+            <td class="t-time">09:15 – 10:00</td>
+            <td class="t-evt"><strong>Invited Talk 1:</strong> Qixing Huang <span class="t-sub">UT Austin</span></td>
           </tr>
           <tr class="row-break">
-            <td class="t-time">10:35 – 11:20</td>
-            <td class="t-evt">Coffee Break</td>
+            <td class="t-time">10:00 – 10:40</td>
+            <td class="t-evt"><em>Morning Coffee Break</em> <span class="t-sub">Malmömässan Exhibit Hall</span></td>
           </tr>
           <tr class="row-talk">
-            <td class="t-time">11:20 – 12:00</td>
-            <td class="t-evt"><strong>Keynote Talk 3: Emanuele Rodolà</strong></td>
-          </tr>
-          <tr class="row-oral">
-            <td class="t-time">12:00 – 12:30</td>
-            <td class="t-evt"><strong>Contributed Orals 1 &amp; 2</strong></td>
-          </tr>
-          <tr class="row-break">
-            <td class="t-time">12:30 – 14:00</td>
-            <td class="t-evt">Lunch Break</td>
-          </tr>
-          <tr class="row-talk">
-            <td class="t-time">14:00 – 14:40</td>
-            <td class="t-evt"><strong>Keynote Talk 4: Kostas Daniilidis</strong></td>
-          </tr>
-          <tr class="row-talk">
-            <td class="t-time">14:40 – 15:20</td>
-            <td class="t-evt"><strong>Keynote Talk 5: Vladislav Golyanik</strong></td>
+            <td class="t-time">10:40 – 11:25</td>
+            <td class="t-evt"><strong>Invited Talk 2:</strong> Zorah Lähner <span class="t-sub">University of Bonn</span></td>
           </tr>
           <tr class="row-panel">
-            <td class="t-time">15:20 – 15:45</td>
-            <td class="t-evt"><strong>Panel Discussion</strong></td>
-          </tr>
-          <tr class="row-poster">
-            <td class="t-time">15:45 – 16:30</td>
-            <td class="t-evt">Poster Session</td>
-          </tr>
-          <tr class="row-oral">
-            <td class="t-time">16:30 – 17:00</td>
-            <td class="t-evt"><strong>Contributed Orals 3 &amp; 4</strong></td>
+            <td class="t-time">11:25 – 11:30</td>
+            <td class="t-evt"><strong>Sponsor Presentation:</strong> Proxima Fusion</td>
           </tr>
           <tr class="row-talk">
-            <td class="t-time">17:00 – 17:40</td>
-            <td class="t-evt"><strong>Keynote Talk 6: Jeong Joon Park</strong></td>
+            <td class="t-time">11:30 – 12:15</td>
+            <td class="t-evt"><strong>Invited Talk 3:</strong> Emanuele Rodolà <span class="t-sub">Sapienza University of Rome</span></td>
+          </tr>
+          <tr class="row-break">
+            <td class="t-time">12:15 – 13:15</td>
+            <td class="t-evt"><em>Lunch Break</em> <span class="t-sub">Malmö Arena – Arena Room</span></td>
+          </tr>
+          <tr class="row-talk">
+            <td class="t-time">13:15 – 14:00</td>
+            <td class="t-evt"><strong>Invited Talk 4:</strong> Kostas Daniilidis <span class="t-sub">UPenn</span></td>
+          </tr>
+          <tr class="row-talk">
+            <td class="t-time">14:00 – 14:45</td>
+            <td class="t-evt"><strong>Invited Talk 5:</strong> Vladislav Golyanik <span class="t-sub">MPI</span></td>
+          </tr>
+          <tr class="row-oral">
+            <td class="t-time">14:45 – 15:00</td>
+            <td class="t-evt"><strong>Flash Talks:</strong> 8 spotlight presentations <span class="t-sub">90 seconds each</span></td>
+          </tr>
+          <tr class="row-poster">
+            <td class="t-time">15:00 – 16:00</td>
+            <td class="t-evt"><em>Poster Session &amp; Afternoon Coffee</em> <span class="t-sub">Exhibit Hall</span></td>
+          </tr>
+          <tr class="row-talk">
+            <td class="t-time">16:00 – 16:45</td>
+            <td class="t-evt"><strong>Invited Talk 6:</strong> Jeong Joon Park <span class="t-sub">UMich</span></td>
           </tr>
           <tr class="row-close">
-            <td class="t-time">17:40 – 18:00</td>
-            <td class="t-evt"><strong>Closing Remarks &amp; Best Paper Awards</strong></td>
+            <td class="t-time">16:45 – 17:00</td>
+            <td class="t-evt"><strong>Closing Remarks</strong></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
 </section>
-──────────────────────────────────────────────────────────────────── -->
 
 <!-- ── Call for Papers ───────────────────────────────────────────── -->
 <section class="sec sec-alt" id="cfp">

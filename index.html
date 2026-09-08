@@ -362,6 +362,57 @@
     tr.row-break  { background: rgba(26,26,46,.04); }
     tr.row-break, tr.row-poster { background: rgba(26,26,46,.04); }
 
+    /* ── Accepted papers ──────────────────────────────────────── */
+    .paper-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .paper {
+      padding: .8rem 1.1rem;
+      background: rgba(26,26,46,.04);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+    .paper-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: .75rem;
+      flex-wrap: wrap;
+    }
+    .paper-title {
+      font-size: .93rem;
+      font-weight: 600;
+      color: #1a1a2e;
+      text-decoration: none;
+      line-height: 1.45;
+    }
+    .paper-title:hover { color: var(--blue-d); }
+    .paper-tags { display: flex; gap: .35rem; flex-shrink: 0; }
+    .ptag {
+      font-size: .66rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      padding: .1rem .55rem;
+      border-radius: 999px;
+      background: rgba(26,26,46,.07);
+      color: rgba(26,26,46,.6);
+      white-space: nowrap;
+    }
+    .ptag-flash { background: rgba(22,163,74,.14); color: #047857; }
+    .ptag-nectar { background: rgba(37,99,235,.12); color: #1d4ed8; }
+    .paper-authors {
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin-top: .15rem;
+    }
+
     /* ── CFP ──────────────────────────────────────────────────── */
     .cfp-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
     .box {
@@ -514,6 +565,7 @@
     <ul class="nav-links" id="nav-links">
       <li><a href="#speakers">Speakers</a></li>
       <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#papers">Papers</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
       <li><a href="#cfp">Call for Papers</a></li>
       <li><a href="#organizers">Organizers</a></li>
@@ -747,6 +799,172 @@
         </tbody>
       </table>
     </div>
+  </div>
+</section>
+
+<!-- ── Accepted Papers ──────────────────────────────────────────── -->
+<section class="sec sec-alt" id="papers">
+  <div class="sec-inner">
+    <div class="sec-hd fi">
+      <h2 class="sec-title">Accepted Papers</h2>
+      <p class="sec-desc">All 22 papers are presented at the poster session (15:00&ndash;16:00, Malmömässan Exhibit Hall, boards 454&ndash;476). Eight papers are additionally featured as flash talks. Nectar Track papers link to their officially published version.</p>
+    </div>
+    <ul class="paper-list fi">
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=LtQfftWolk" target="_blank" rel="noopener">ConvexRecon: Adaptive Convex Decompositions for Robust Surface Reconstruction</a>
+          <span class="paper-tags"><span class="ptag">Board 454</span></span>
+        </div>
+        <div class="paper-authors">Xueyang Kang, Zexian Huang, Zhengkang Xiang, Hang Zhao, Andrea Tagliasacchi, Liangliang Nan</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=xpeKKqBM10" target="_blank" rel="noopener">MeshGuard: Hidden 3D Watermarking in Spectral Space through Laplacian Beltrami Operator and Geometry Fusion</a>
+          <span class="paper-tags"><span class="ptag ptag-flash">Flash Talk</span><span class="ptag">Board 455</span></span>
+        </div>
+        <div class="paper-authors">Xueyang Kang, Hang Zhao, Zexian Huang, Daniel Cremers, Kourosh Khoshelham</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=SUAheeaHAQ" target="_blank" rel="noopener">Manhattan World Prior with Gromov-Wasserstein Optimal Transport</a>
+          <span class="paper-tags"><span class="ptag">Board 456</span></span>
+        </div>
+        <div class="paper-authors">Francis Snelgar, Stephen Gould, Liang Zheng, Akshay Asthana</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=HJuvxLvVNl" target="_blank" rel="noopener">Ideal Machine Intelligence: Geometry as the Shared Structure of Mind and Matter</a>
+          <span class="paper-tags"><span class="ptag">Board 457</span></span>
+        </div>
+        <div class="paper-authors">Erik J Bekkers</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=tEblLRbRJv" target="_blank" rel="noopener">ERank in Latent Space as an Image-Complexity and Richness Measure</a>
+          <span class="paper-tags"><span class="ptag">Board 458</span></span>
+        </div>
+        <div class="paper-authors">Maksim Smirnov, Grigory Kononov, Anastasiia Linich, Egor Surkov, Egor Shvetsov</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=Ok0kRjesb6" target="_blank" rel="noopener">IRIS: Intersection-aware Ray-based Implicit Editable Scenes</a>
+          <span class="paper-tags"><span class="ptag">Board 459</span></span>
+        </div>
+        <div class="paper-authors">Grzegorz Wilczyński, Mikołaj Zieliński, Krzysztof Byrski, Joanna Szelewska, Dominik Belter, Przemysław Spurek</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=oZX0YZchXe" target="_blank" rel="noopener">Towards Stellarator Geometry Optimisation for Nuclear Fusion</a>
+          <span class="paper-tags"><span class="ptag ptag-flash">Flash Talk</span><span class="ptag">Board 460</span></span>
+        </div>
+        <div class="paper-authors">Tobias Weißberg, Moritz Heep, Zorah Lähner, Florian Bernard</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=kjWB8iaO3l" target="_blank" rel="noopener">CLIPGaussian: Universal and Multimodal Style Transfer Based on Gaussian Splatting</a>
+          <span class="paper-tags"><span class="ptag ptag-nectar">Nectar · NeurIPS 2025</span><span class="ptag">Board 461</span></span>
+        </div>
+        <div class="paper-authors">Kornel Howil, Joanna Szelewska, Piotr Borycki, Tadeusz Dziarmaga, Marcin Mazur, Przemysław Spurek</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://arxiv.org/abs/2603.27891" target="_blank" rel="noopener">Poppy: Polarization-based Plug-and-Play Guidance for Enhancing Monocular Normal Estimation</a>
+          <span class="paper-tags"><span class="ptag ptag-nectar">Nectar · ECCV 2026</span><span class="ptag ptag-flash">Flash Talk</span><span class="ptag">Board 462</span></span>
+        </div>
+        <div class="paper-authors">Irene Kim, Sai Tanmay Reddy Chakkera, Alexandros Graikos, Dimitris Samaras, Akshat Dave</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=YHbGOaLoAR" target="_blank" rel="noopener">AutoPhyX: Automatic Text-Condition Physics Property Generation</a>
+          <span class="paper-tags"><span class="ptag ptag-flash">Flash Talk</span><span class="ptag">Board 463</span></span>
+        </div>
+        <div class="paper-authors">Bei Huang, Yixin Chen, Hongbin Zha, Yuru Pei, Siyuan Huang</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=Gy8eLzZzEw" target="_blank" rel="noopener">NeLU3D: Neural Inverse Structured Light without Explicitly Modeling the Projector</a>
+          <span class="paper-tags"><span class="ptag">Board 465</span></span>
+        </div>
+        <div class="paper-authors">Giancarlo Pereira, David Fouhey, Claudio Silva, Daniele Panozzo</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=cbGnqFq8Zy" target="_blank" rel="noopener">Coupled Geometry Distributions</a>
+          <span class="paper-tags"><span class="ptag">Board 466</span></span>
+        </div>
+        <div class="paper-authors">Benedikt Klotz, Riccardo Marin, Daniel Cremers</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=alTQZ45uD9" target="_blank" rel="noopener">DisPOSE: Projected Polystochastic Diffusion for Self-Supervised Multi-View 3D Human Pose Estimation</a>
+          <span class="paper-tags"><span class="ptag">Board 467</span></span>
+        </div>
+        <div class="paper-authors">Tony Danjun Wang, Tolga Birdal, Nassir Navab, Lennart Bastian</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=oZcI7b9gk8" target="_blank" rel="noopener">Do Sheaf Neural Networks Use Holonomy? A Measure–Intervene–Control Study</a>
+          <span class="paper-tags"><span class="ptag">Board 468</span></span>
+        </div>
+        <div class="paper-authors">Ankit Grover, Rémi Bourgerie</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://doi.org/10.1007/s11263-025-02684-0" target="_blank" rel="noopener">Symmetria: A Synthetic Dataset for Learning in Point Clouds</a>
+          <span class="paper-tags"><span class="ptag ptag-nectar">Nectar · IJCV 2026</span><span class="ptag">Board 469</span></span>
+        </div>
+        <div class="paper-authors">Ivan Sipiran, Gustavo Santelices, Lucas Oyarzún Méndez, Andrea Ranieri, Chiara Romanengo, Silvia Biasotti, Bianca Falcidieno</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openaccess.thecvf.com/content/CVPR2026/html/Hahlbohm_Faster-GS_Analyzing_and_Improving_Gaussian_Splatting_Optimization_CVPR_2026_paper.html" target="_blank" rel="noopener">Faster-GS: Analyzing and Improving Gaussian Splatting Optimization</a>
+          <span class="paper-tags"><span class="ptag ptag-nectar">Nectar · CVPR 2026</span><span class="ptag">Board 470</span></span>
+        </div>
+        <div class="paper-authors">Florian Hahlbohm, Linus Franke, Martin Eisemann, Marcus Magnor</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=YzMfOr03eo" target="_blank" rel="noopener">Bridging Generative Latents and Mechanical Response: A Layer-Wise Analysis of Steel Microstructures</a>
+          <span class="paper-tags"><span class="ptag ptag-flash">Flash Talk</span><span class="ptag">Board 471</span></span>
+        </div>
+        <div class="paper-authors">Marcel Wentzien, Dirk Schmalzried, Jörg Schlötterer</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=ySuqLlWaM2" target="_blank" rel="noopener">DINOcular: Self-Supervised Visuospatial Representations</a>
+          <span class="paper-tags"><span class="ptag ptag-flash">Flash Talk</span><span class="ptag">Board 472</span></span>
+        </div>
+        <div class="paper-authors">Farkhat Almukhamedov, Sami Azirar, Hermann Blum</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=RkQwXu4yQJ" target="_blank" rel="noopener">HodgeFormer: Transformers for Learnable Operators on Triangular Meshes through Data-Driven Hodge Matrices</a>
+          <span class="paper-tags"><span class="ptag">Board 473</span></span>
+        </div>
+        <div class="paper-authors">Akis Nousias, Stavros Nousias</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=RJLfhQ3wQh" target="_blank" rel="noopener">Learning Diffeomorphic Flows from Shapes to the Sphere</a>
+          <span class="paper-tags"><span class="ptag">Board 474</span></span>
+        </div>
+        <div class="paper-authors">Paolo Zuzolo, Jan Ricardo Mussmann, Guilherme Schardong, Tiago Novello, Michael Moeller</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=XIHjJTOKbE" target="_blank" rel="noopener">Prompted Geometry: Multi-View VLM Pointing for Zero-Shot 3D Symmetry Detection</a>
+          <span class="paper-tags"><span class="ptag ptag-flash">Flash Talk</span><span class="ptag">Board 475</span></span>
+        </div>
+        <div class="paper-authors">Patricio Espinoza, Ivan Sipiran</div>
+      </li>
+      <li class="paper">
+        <div class="paper-top">
+          <a class="paper-title" href="https://openreview.net/forum?id=lCldIsnG3r" target="_blank" rel="noopener">STRATA: Self-Supervised, Tiered Representation Learning for Semantic Segmentation of Carbonate Thin Sections</a>
+          <span class="paper-tags"><span class="ptag ptag-flash">Flash Talk</span><span class="ptag">Board 476</span></span>
+        </div>
+        <div class="paper-authors">Rachel Yun, Zaid Nabulsi, Jonathan Payne, Pulkit Singh, Hamza Woodson, Cara Lee</div>
+      </li>
+    </ul>
   </div>
 </section>
 
